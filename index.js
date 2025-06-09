@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburg = document.getElementById("hamburg");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
   const mobileMenu = document.getElementById("mobile-menu");
   const body = document.body;
 
-  hamburg.addEventListener("click", () => {
-    hamburg.classList.toggle("open");
+  hamburgerIcon.addEventListener("click", () => {
+    hamburgerIcon.classList.toggle("open");
     mobileMenu.classList.toggle("active");
     body.classList.toggle("overflow-hiddden");
   });

@@ -64,7 +64,7 @@ header {
 #mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 50%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
@@ -72,14 +72,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateX(0);
+  transform: translateX(100%);
   transition: all 0.4s ease-in-out;
-  z-index: 40;
+  z-index: 30;
   visibility: hidden;
   opacity: 0;
 }
 #mobile-menu.active {
   opacity: 1;
   visibility: visible;
-  transform: translateX(100%);
+  transform: translateX(0);
 }

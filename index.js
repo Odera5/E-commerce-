@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   hamburgerIcon.addEventListener("click", () => {
     hamburgerIcon.classList.toggle("open");
     mobileMenu.classList.toggle("active");
-    body.classList.toggle("overflow-hiddden");
+    body.classList.toggle("overflow-hidden");
   });
 });

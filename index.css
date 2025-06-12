@@ -21,9 +21,7 @@ header {
   list-style: none;
   align-items: center;
 }
-#nav-item-container {
-  display: flex;
-}
+
 #nav-content {
   display: flex;
   justify-content: space-between;
@@ -33,19 +31,17 @@ header {
   display: flex;
   justify-content: center;
 }
-#hamburger {
-  z-index: 50;
-}
 
 #hamburger-icon {
   display: flex;
   justify-content: space-around;
-  background-color: black;
+
   width: 20px;
   height: 24px;
   flex-direction: column;
   position: relative;
   cursor: pointer;
+  z-index: 50;
 }
 #hamburger-icon > span {
   display: block;
@@ -76,7 +72,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateX(-100%);
+  transform: translateX(0);
   transition: all 0.4s ease-in-out;
   z-index: 40;
   visibility: hidden;
@@ -85,5 +81,5 @@ header {
 #mobile-menu.active {
   opacity: 1;
   visibility: visible;
-  transform: translateX(0);
+  transform: translateX(100%);
 }
